@@ -2329,6 +2329,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+		 
 	}
 
 		.image img {
@@ -2357,16 +2358,19 @@
 		}
 
 		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
+			
+			
 			width: 128px;
+			transition: transform .2s;
+
+			
 		}
 
 			.image.fit img {
-				width: 128px;
-			}
-
-		.image.main {
+				width: 200px;
+				
+}
+	.image.main {
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
@@ -2378,6 +2382,10 @@
 			.image.about img{
 				width : 70%;
 				position:center;}
+				.image.fit:hover{
+					transform: scale(1.5);
+					
+     }
 
 /* List */
 
@@ -3959,3 +3967,10 @@
 			}
 
 		}
+
+p{
+	text-align: justify;
+}
+h3{
+	text-align:center;
+}
