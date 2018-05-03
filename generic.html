@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>Sports</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
+	
 	</head>
 	<body>
+		
 
 		<!-- Header -->
 			<header id="header">
@@ -19,7 +20,7 @@
 						<a >Types of Sports</a>
 						<div class="dropdown-content">
                         <a href="types.html">Outdoor Sports</a><br>
-                        <a href="#about">Indoor Sports</a>
+                        <a href="indoor.html">Indoor Sports</a>
                         </div>
                     </div>
 						<a href="feedback.html">Feedback Form</a>
@@ -30,32 +31,37 @@
 			</header>
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
+ 
+    
+
 		<!-- Main -->
 			<section id="main" >
+				
 				<div class="inner">
+				
 					<header class="major special">
 						<h1>About</h1>
 						<p>This page will tell what this page do and what this page is all about</p>
 					</header>
-					<center><div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="images/cricket.jpg" style="width:100%">
-  <img class="mySlides" src="images/pic033.jpg" style="width:100%">
-  <img class="mySlides" src="images/pic011.jpg" style="width:100%">
-</div></center>
-
+					<center>
+					 <img class="mySlides" src="images/image1.jpg" style="width:100%">
+  <img class="mySlides" src="images/image4.jpg" style="width:100%">
+  <img class="mySlides" src="images/image3.jpg" style="width:100%">
+</center>
 					<p>This website is all about the diffrent categories of sports.
 					Here is some basic intro what sport is.</p>
 					<p>The word “sports” comes from the ancient French: "se desporter" or "se déporter" and became "to deport" in English. It meant "amuse". Sometimes violent, with natural and brutal movements at the beginning, English people enjoyed themselves playing traditional sports. Sport was only fun. Then it opted for competition. After the English industrial revolution English people codified the rules of sport and gradually organized it around clubs. Sport really developed in the middle of the XIXth century. </p>
-					<ul class="actions">
-								<li><a href="types.html" class="button alt">Learn More</a></li>
-							</ul>
-					
-				</div>
+			
+				
+		</div>
 			
 
 			</section>
 
 		
+
+
+</body>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -78,6 +84,27 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+<script >function cycleBackgrounds() {
+    var index = 0;
+ 
+    $imageEls = $('.container .slide'); // Get the images to be cycled.
+ 
+    setInterval(function () {
+        // Get the next index.  If at end, restart to the beginning.
+        index = index + 1 < $imageEls.length ? index + 1 : 0;
+        
+        // Show the next
+        $imageEls.eq(index).addClass('show');
+        
+        // Hide the previous
+        $imageEls.eq(index - 1).removeClass('show');
+    }, 2000);
+};
+ 
+// Document Ready.
+$(function () {
+    cycleBackgrounds();
+});</script>
 
 	</body>
 </html>

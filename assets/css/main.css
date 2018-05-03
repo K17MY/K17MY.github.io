@@ -1,11 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 
-/*
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
 
 /* Reset */
 
@@ -2577,7 +2573,7 @@ header h1{
 	}
 
 	header p {
-		color: #717171;
+		color: black;
 		text-align: center;
 	}
 
@@ -3382,7 +3378,7 @@ header h1{
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
 		background-color: #0c0c0c;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/messi.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 15% left;
@@ -3976,6 +3972,8 @@ header h1{
 
 p{
 	text-align: justify;
+	color: black;
+	font-weight: bold;
 }
 h3{
 	text-align:center;
@@ -4027,6 +4025,21 @@ h3{
     background-position: fill;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .mySlides {display:none;
 }
+.bg {
+    /* The image used */
+    background-image: url("../../images/sportsbg.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+opacity: 1;
+}
+
