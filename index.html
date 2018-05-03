@@ -15,7 +15,13 @@
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="generic.html">About</a>
-						<a href="types.html">Types of Sports</a>
+						<div class="dropdown">
+						<a >Types of Sports</a>
+						<div class="dropdown-content">
+                        <a href="types.html">Outdoor Sports</a><br>
+                        <a href="#about">Indoor Sports</a>
+                        </div>
+                    </div>
 						<a href="feedback.html">Feedback Form</a>
 						<a href="newsletter.html">Our News Letter</a>
 
@@ -27,9 +33,9 @@
 					<section id="banner">
 				<div class="inner">
 					<h1>Sports <span>An Essential Component of Life</br>
-					site template by GROUP-3 [ K17MY ] </span></h1>
+					site by GROUP-3 K17MY</span></h1>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Get Started</a></li>
+						<li><a href="generic.html" class="button alt">Get Started</a></li>
 					</ul>
 				</div>
 			</section>
@@ -53,6 +59,28 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 	</body>
 </html>

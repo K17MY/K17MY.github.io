@@ -15,11 +15,17 @@
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="generic.html">About</a>
-						<a href="types.html">Types of Sports</a>
+						<div class="dropdown">
+						<a >Types of Sports</a>
+						<div class="dropdown-content">
+                        <a href="types.html">Outdoor Sports</a><br>
+                        <a href="#about">Indoor Sports</a>
+                        </div>
+                    </div>
 						<a href="feedback.html">Feedback Form</a>
 						<a href="newsletter.html">Our News Letter</a>
 
-</nav>
+					</nav>
 				</div>
 			</header>
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -27,8 +33,10 @@
 		
 		<!-- Footer -->
 			<section id="footer">
+				<div class="bg-img">
 				<div class="inner">
 					<header>
+						
 						<h2>Feedback Form</h2>
 					</header>
 					<form method="post" action="#" onSubmit="alert('Thank you for your feedback.');">
@@ -48,8 +56,9 @@
 							<li><input type="submit" value="Send Message" class="alt" /></li>
 						</ul>
 					</form>
-					
+					</div>
 				</div>
+
 			</section>
 
 		<!-- Scripts -->

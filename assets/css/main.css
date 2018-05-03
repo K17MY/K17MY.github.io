@@ -2361,13 +2361,16 @@
 			
 			
 			width: 128px;
-			transition: transform .2s;
+			transition: transform .3s;
+			margin-left: 57px;
 
 			
 		}
 
 			.image.fit img {
-				width: 200px;
+				width: 300px;
+				
+				
 				
 }
 	.image.main {
@@ -2548,7 +2551,8 @@
 			}
 
 		}
-
+header h1{
+	text-align: center;}
 	header p {
 		position: relative;
 		margin: 0 0 1.5em 0;
@@ -2562,6 +2566,7 @@
 	header h3 + p {
 		font-size: 1.1em;
 		margin-top: -0.8em;
+		text-align: center;
 	}
 
 	header h4 + p,
@@ -2573,6 +2578,7 @@
 
 	header p {
 		color: #717171;
+		text-align: center;
 	}
 
 /* Table */
@@ -3973,4 +3979,54 @@ p{
 }
 h3{
 	text-align:center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: justify;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #484848;
+    min-width: 200px;
+
+    
+}
+
+.dropdown-content a {
+   text-align: center;
+    padding: 12px 20px;
+    
+    display: inline;
+}
+
+.dropdown-content a:hover {color: #484848;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    
+    background-image: url("../../images/banner.jpg");
+
+    min-height: 380px;
+
+    
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mySlides {display:none;
 }

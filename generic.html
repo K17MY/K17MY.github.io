@@ -15,9 +15,16 @@
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="generic.html">About</a>
-						<a href="types.html">Types of Sports</a>
+						<div class="dropdown">
+						<a >Types of Sports</a>
+						<div class="dropdown-content">
+                        <a href="types.html">Outdoor Sports</a><br>
+                        <a href="#about">Indoor Sports</a>
+                        </div>
+                    </div>
 						<a href="feedback.html">Feedback Form</a>
 						<a href="newsletter.html">Our News Letter</a>
+
 					</nav>
 				</div>
 			</header>
@@ -30,9 +37,11 @@
 						<h1>About</h1>
 						<p>This page will tell what this page do and what this page is all about</p>
 					</header>
-					<div class="zoom">
-					<a href="#" class="image about"><img src="images/sports-banner.png" alt="" /></a>
-				</div>
+					<center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/cricket.jpg" style="width:100%">
+  <img class="mySlides" src="images/pic033.jpg" style="width:100%">
+  <img class="mySlides" src="images/pic011.jpg" style="width:100%">
+</div></center>
 
 					<p>This website is all about the diffrent categories of sports.
 					Here is some basic intro what sport is.</p>
@@ -53,6 +62,22 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
 	</body>
 </html>
